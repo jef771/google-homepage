@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .logo {
+            display: grid;
+            grid-template-columns: auto;
+            justify-self: center;
+            position: relative; top: 25px;  
+        }
+        body {
+            font-family: arial,sans-serif;
+        }
+        .header1 {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 100px;
+        }
+        .header {
+            font-size: 13px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 33.9833px 31.0833px 970px 33.95px 42.65px 30px 43.3167px;
+            grid-template-rows: 25px;
+            grid-column-gap: 15px;
+            color: #000;
+            opacity: 0.90;
+            text-decoration: none;
+            position: relative; top: 8px; left: 8px;
+        }
+        .header a:hover {
+            text-decoration: underline;
+        }
+        .icon1 {
+            position: relative; bottom: 10px;
+            opacity: 0.5;
+        }
+        .icon1:hover {
+            opacity: 1;
+        }
+        .sign-in {
+            display: grid;
+            grid-template-columns: 43.3167px;
+            grid-template-rows: 28px;
+            justify-self: center;
+            align-self: start;
+            border: 69.3167px;
+            padding: 0 12px;
+            background: -moz-linear-gradient(top,#4387fd,#4683ea);
+            position: relative; bottom: 8px; left: 12px;
+            cursor: default;
+        }
+        .sign-in-text {
+            display: flex;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+        }
+        .sign-in a:hover{
+            text-decoration: none;
+        }
+        .searchbar1 {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 46px;
+        }
+        .searchbar2 {
+            display: grid;
+            grid-template-columns: 584px; 
+            grid-template-rows: 46px;
+            justify-self: center;
+            position: relative; top: 75px;
+            background:#fff;
+            border-top-color: rgb(223, 225, 229);
+            border-top-style: solid;
+            border-top-width: 1px;
+            border-right-color: rgb(223, 225, 229);
+            border-right-style: solid;
+            border-right-width: 1px;
+            border-bottom-color: rgb(223, 225, 229);
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+            border-left-color: rgb(223, 225, 229);
+            border-left-style: solid;
+            border-left-width: 1px;
+            border-image-outset: 0;
+            border-image-repeat: stretch;
+            border-image-slice: 100%;
+            border-image-source: none;
+            border-image-width: 1;
+            border-top-left-radius: 24px;
+            border-top-right-radius: 24px;
+            border-bottom-right-radius: 24px;
+            border-bottom-left-radius: 24px;
+        }
+        .searchbar2:hover{
+            box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+            border-color: rgba(223,225,229,0);
+        }
+        .searchbar3 {
+            display: grid;
+            grid-template-columns: 487px;
+            grid-template-rows: 39px;
+            justify-self: center;
+            border: none;
+            background: transparent;
+        }
+        .searchbar4 {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+            border: none;
+            background: transparent;
+            font-size: 16px;
+            position: relative; bottom: 72px;
+        }
+        .searchbar5 {
+            height: 24px;
+            width: 24px;
+            background-size: 24px;
+            position: relative; top: 10px; left: 542px;
+        }
+        .searchbar6 {
+            opacity: 0.30;
+            position: relative; bottom: 40px; left: 10px;
+        }
+        .buttom1 {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: auto;
+            justify-items: center;
+            align-items: center;
+        }
+        .buttom2 {
+            display: grid;
+            grid-template-columns: 129.2px 146.717px;
+            column-gap: 5px;
+            grid-template-rows: 36px;
+            justify-self: center;
+            align-items: center;
+            position: relative; top: 105px;
+        }
+        .googlesearch {
+            background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+            background-color: #f2f2f2;
+            border: 1px solid #f2f2f2;
+            border-top-color: rgb(242, 242, 242);
+            border-top-style: solid;
+            border-top-width: 1px;
+            border-right-color: rgb(242, 242, 242);
+            border-right-style: solid;
+            border-right-width: 1px;
+            border-bottom-color: rgb(242, 242, 242);
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+            border-left-color: rgb(242, 242, 242);
+            border-left-style: solid;
+            border-left-width: 1px;
+            border-image-outset: 0;
+            border-image-repeat: stretch;
+            border-image-slice: 100%;
+            border-image-source: none;
+            border-image-width: 1;
+            border-radius: 4px;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            border-bottom-left-radius: 4px;
+            color: #5F6368;
+            font-family: arial,sans-serif;
+            font-size: 14px;
+            margin: 11px 4px;
+            margin-top: 11px;
+            margin-right: 4px;
+            margin-bottom: 11px;
+            margin-left: 4px;
+            padding: 0 16px;
+            padding-top: 0px;
+            padding-right: 16px;
+            padding-bottom: 0px;
+            padding-left: 16px;
+            line-height: 27px;
+            height: 36px;
+            min-width: 54px;
+            text-align: center;
+            cursor: pointer;
+            user-select: none;
+        }
+        .googlesearch:hover{
+            background-image: -webkit-gradient(linear,left top,left bottom,from(#f8f8f8),to(#f1f1f1));
+            background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+            -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+            background-color: #f8f8f8;
+            background-image: linear-gradient(top,#f8f8f8,#f1f1f1);
+            background-image: -o-linear-gradient(top,#f8f8f8,#f1f1f1);
+            border: 1px solid #c6c6c6;
+            border-top-color: rgb(198, 198, 198);
+            border-top-style: solid;
+            border-top-width: 1px;
+            border-right-color: rgb(198, 198, 198);
+            border-right-style: solid;
+            border-right-width: 1px;
+            border-bottom-color: rgb(198, 198, 198);
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+            border-left-color: rgb(198, 198, 198);
+            border-left-style: solid;
+            border-left-width: 1px;
+            border-image-outset: 0;
+            border-image-repeat: stretch;
+            border-image-slice: 100%;
+            border-image-source: none;
+            border-image-width: 1;
+            box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+            color: #222;
+        }
+        .footer1 {
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 40px;
+            background-color: rgb(242, 242, 242);
+            background-position-x: 0%;
+            background-position-y: 0%;
+            background-repeat: repeat;
+            background-attachment: scroll;
+            background-image: none;
+            background-size: auto;
+            background-origin: padding-box;
+            background-clip: border-box;
+            line-height: 40px;
+            min-width: 980px;
+            position: relative; top: 256.5px;
+        }
+        .footer2 {
+            display: grid;
+            grid-template-columns: 69.25px 56.8px 122.7px 750px 45.9px 38.1167px 50.5667px;
+            grid-template-rows: 20px;
+            grid-column-gap: 27px;
+            font-size: 11pt;
+            position: relative; left: 8.5px;
+        }
+        .footer3 {
+            text-decoration: none;
+            color: #222;
+            opacity: 0.8;
+        }
+        .footer3:hover{
+            text-decoration: underline;
+        }
+    </style>
+    <body>
+    <header>
+        <div class= "header1">
+            <div class= "header">
+                <a class= "header" href="#">About</a>
+                <a class= "header" href="#">Store</a>
+                <p class= "header"></p>
+                <a class= "header" href="#">Gmail</a>
+                <a class= "header" href="#">Images</a>
+                <div class= "header">
+                    <a href="#"><img class= "icon1" src="https://i.ibb.co/GQQPqH7/app1.png" alt="Google App Icon"></a>
+                </div>
+                <div class= "header">
+                    <div class= "sign-in">
+                        <a class= "sign-in-text">Sign In</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class= "logo">
+        <img class= "logo" src=https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png alt="Google Logo">
+    </div>
+    <div class= "searchbar1">
+        <div class= "searchbar2">
+            <img class= "searchbar5" src="https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png">
+            <img class= "searchbar6" src="https://i.ibb.co/FVHp9R9/lupa1.png">
+                <div class= "searchbar3">
+                    <input class= "searchbar4" type="text">
+                </div>
+        </div>
+    </div>
+    <div class= "buttom1">
+        <div class= "buttom2">
+            <input class= "googlesearch" value= "Google Search" type= "submit">
+            <input class= "googlesearch" value= "I'm Feeling Lucky" type= "submit">
+        </div>
+    </div>
+    <footer>
+        <div class= "footer1">
+            <div class= "footer2">
+                <a class= "footer3" href= "#">Advertising</a>
+                <a class= "footer3" href= "#">Business</a>
+                <a class= "footer3" href= "#">How Search works</a>
+                <p></p>
+                <a class= "footer3" href= "#">Privacy</a>
+                <a class= "footer3" href= "#">Terms</a>
+                <a class= "footer3" href= "#">Settings</a>
+            </div>
+        </div>
+    </footer>
+    </body>
+</html>
