@@ -5,27 +5,34 @@
             display: grid;
             grid-template-columns: auto;
             justify-self: center;
-            position: relative; top: 25px;  
+            position: relative; top: 25px;
         }
         body {
             font-family: arial,sans-serif;
+        }
+        article {
+          min-height: 100%;
+          display: grid;
+          grid-template-rows: auto 1fr auto;
+          grid-template-columns: 100%;
         }
         .header1 {
             display: grid;
             grid-template-columns: auto;
             grid-template-rows: 100px;
+            align-items: stretch;
         }
         .header {
             font-size: 13px;
             width: 100%;
             display: grid;
-            grid-template-columns: 33.9833px 31.0833px 970px 33.95px 42.65px 30px 43.3167px;
+            grid-template-columns: 33.9833px 31.0833px minmax(500px,1500px) 33.95px 42.65px 30px 50.3167px;
             grid-template-rows: 25px;
             grid-column-gap: 15px;
             color: #000;
             opacity: 0.90;
             text-decoration: none;
-            position: relative; top: 8px; left: 8px;
+            position: relative; top: 8px; left: 10px;
         }
         .header a:hover {
             text-decoration: underline;
@@ -39,7 +46,7 @@
         }
         .sign-in {
             display: grid;
-            grid-template-columns: 43.3167px;
+            grid-template-columns: 50.3167px;
             grid-template-rows: 28px;
             justify-self: center;
             align-self: start;
@@ -65,7 +72,7 @@
         }
         .searchbar2 {
             display: grid;
-            grid-template-columns: 584px; 
+            grid-template-columns: 584px;
             grid-template-rows: 46px;
             justify-self: center;
             position: relative; top: 75px;
@@ -213,30 +220,27 @@
             box-shadow: 0 1px 1px rgba(0,0,0,0.1);
             color: #222;
         }
+        .footer {
+          position:absolute;
+          bottom:0;
+          left:0;
+          right:0;
+        }
         .footer1 {
             display: grid;
             grid-template-columns: auto;
             grid-template-rows: 40px;
             background-color: rgb(242, 242, 242);
-            background-position-x: 0%;
-            background-position-y: 0%;
-            background-repeat: repeat;
-            background-attachment: scroll;
-            background-image: none;
-            background-size: auto;
-            background-origin: padding-box;
-            background-clip: border-box;
             line-height: 40px;
             min-width: 980px;
-            position: relative; top: 256.5px;
         }
         .footer2 {
             display: grid;
-            grid-template-columns: 69.25px 56.8px 122.7px 750px 45.9px 38.1167px 50.5667px;
+            grid-template-columns: 69.25px 56.8px 130.7px minmax(500px,1300px) 45.9px 38.1167px 50.5667px 1px;
             grid-template-rows: 20px;
             grid-column-gap: 27px;
             font-size: 11pt;
-            position: relative; left: 8.5px;
+            position: relative; left: 20px;
         }
         .footer3 {
             text-decoration: none;
@@ -248,25 +252,26 @@
         }
     </style>
     <body>
-    <header>
+      <article>
+      <header>
         <div class= "header1">
+          <div class= "header">
+            <a class= "header" href="#">About</a>
+            <a class= "header" href="#">Store</a>
+            <p class= "header"></p>
+            <a class= "header" href="#">Gmail</a>
+            <a class= "header" href="#">Images</a>
             <div class= "header">
-                <a class= "header" href="#">About</a>
-                <a class= "header" href="#">Store</a>
-                <p class= "header"></p>
-                <a class= "header" href="#">Gmail</a>
-                <a class= "header" href="#">Images</a>
-                <div class= "header">
-                    <a href="#"><img class= "icon1" src="https://i.ibb.co/GQQPqH7/app1.png" alt="Google App Icon"></a>
-                </div>
-                <div class= "header">
-                    <div class= "sign-in">
-                        <a class= "sign-in-text">Sign In</a>
-                    </div>
-                </div>
+              <a href="#"><img class= "icon1" src="https://i.ibb.co/GQQPqH7/app1.png" alt="Google App Icon"></a>
             </div>
+            <div class= "header">
+              <div class= "sign-in">
+                <a class= "sign-in-text">Sign In</a>
+              </div>
+            </div>
+          </div>
         </div>
-    </header>
+      </header>
     <div class= "logo">
         <img class= "logo" src=https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png alt="Google Logo">
     </div>
@@ -285,7 +290,7 @@
             <input class= "googlesearch" value= "I'm Feeling Lucky" type= "submit">
         </div>
     </div>
-    <footer>
+      <footer class= "footer">
         <div class= "footer1">
             <div class= "footer2">
                 <a class= "footer3" href= "#">Advertising</a>
@@ -297,6 +302,7 @@
                 <a class= "footer3" href= "#">Settings</a>
             </div>
         </div>
-    </footer>
+      </footer>
+    </article>
     </body>
 </html>
